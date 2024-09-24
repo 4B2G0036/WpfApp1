@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Microsoft.VisualBasic;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,5 +21,41 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+        List<int> primes = new List<int>();
+        private void MyButton_Click(object sender, RoutedEventArgs e)
+        {
+            int n;
+            bool IsSuccess = int.TryParse(MyTextBox.Text, out n);
+            if (!IsSuccess)
+            {
+                MessageBox.Show("請輸入整數", "錯誤");
+            }
+            else if (n < 2)
+            {
+                MessageBox.Show("請輸入大於等於2的整數", "錯誤");
+            }
+            else
+            {
+                string primetext = $"小於等於{n}的質數有 : ";
+                for (int i = 2; i <= n; i++)
+                {
+                    if (IsPrime(i)) primes.Add(i);
+                }
+                foreach (var p in primes) {
+                    primetext += p + " ";
+                }
+                MyTextBlock.Text = primetext;
+            }
+        }
+
+        private bool IsPrime(int p)
+        {
+            for (int i = 2; i < p; i++)
+            {
+                if ((p % i) == 0) return false;
+            }
+            return true;
+        }
     }
 }
+    
