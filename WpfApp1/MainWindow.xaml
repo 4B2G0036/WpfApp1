@@ -11,32 +11,38 @@
 			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
 				<Label Content="紅茶大杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
 				<Label Content="60" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
-				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="36"/>
+				<Slider x:Name="slider" Width="150" Height="18" IsSnapToTickEnabled="True" Minimum="1"/>
+				<Label VerticalContentAlignment="Center" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Foreground="#FF148AE6" Content="{Binding Value, ElementName=slider}"/>
 			</StackPanel>
 			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
-				<Label Content="紅茶小杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="紅茶大杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
 				<Label Content="40" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
-				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="34"/>
+				<Slider x:Name="slider1" Width="150" Height="18" IsSnapToTickEnabled="True" Minimum="1"/>
+				<Label VerticalContentAlignment="Center" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Foreground="#FF148AE6" Content="{Binding Value, ElementName=slider1}"/>
 			</StackPanel>
 			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
-				<Label Content="綠茶大杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="紅茶大杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
 				<Label Content="60" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
-				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="35"/>
+				<Slider x:Name="slider2" Width="150" Height="18" IsSnapToTickEnabled="True" Minimum="1"/>
+				<Label VerticalContentAlignment="Center" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Foreground="#FF148AE6" Content="{Binding Value, ElementName=slider2}"/>
 			</StackPanel>
 			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
-				<Label Content="綠茶小杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="紅茶大杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
 				<Label Content="40" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
-				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="36"/>
+				<Slider x:Name="slider3" Width="150" Height="18" IsSnapToTickEnabled="True" Minimum="1"/>
+				<Label VerticalContentAlignment="Center" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Foreground="#FF148AE6" Content="{Binding Value, ElementName=slider3}"/>
 			</StackPanel>
 			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
-				<Label Content="可樂大杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="紅茶大杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
 				<Label Content="50" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
-				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="33"/>
+				<Slider x:Name="slider4" Width="150" Height="18" IsSnapToTickEnabled="True" Minimum="1"/>
+				<Label VerticalContentAlignment="Center" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Foreground="#FF148AE6" Content="{Binding Value, ElementName=slider4}"/>
 			</StackPanel>
 			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
-				<Label Content="可樂小杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
-				<Label Content="30" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
-				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="34"/>
+				<Label Content="紅茶大杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="60" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Slider x:Name="slider5" Width="150" Height="18" IsSnapToTickEnabled="True" Minimum="1"/>
+				<Label VerticalContentAlignment="Center" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Foreground="#FF148AE6" Content="{Binding Value, ElementName=slider5}"/>
 			</StackPanel>
 		</StackPanel>
 		<Button Content="確定訂購" HorizontalAlignment="Left" Margin="521,23,0,0" VerticalAlignment="Top" Height="77" Width="127" FontSize="20"/>
