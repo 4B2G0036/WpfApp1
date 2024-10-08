@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="MainWindow" Height="549" Width="768">
+	<Grid Margin="0,0,101,2">
+		<StackPanel Width="441" Height="309" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Background="#FF89D89C">
+			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
+				<Label Content="紅茶大杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="60" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="36"/>
+			</StackPanel>
+			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
+				<Label Content="紅茶小杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="40" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="34"/>
+			</StackPanel>
+			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
+				<Label Content="綠茶大杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="60" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="35"/>
+			</StackPanel>
+			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
+				<Label Content="綠茶小杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="40" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="36"/>
+			</StackPanel>
+			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
+				<Label Content="可樂大杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="50" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="33"/>
+			</StackPanel>
+			<StackPanel Height="40" Background="White" RenderTransformOrigin="0.5,0.5" Margin="5,5,5,5" Orientation="Horizontal">
+				<Label Content="可樂小杯" VerticalAlignment="Center" FontWeight ="Bold" FontSize="16" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<Label Content="30" VerticalAlignment="Center" FontSize="16" FontWeight ="Bold" FontFamily="Adobe Fan Heiti Std B" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+				<TextBox TextWrapping="Wrap" Width="155" TextChanged="Text_box_TextChanged" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Height="34"/>
+			</StackPanel>
+		</StackPanel>
+		<Button Content="確定訂購" HorizontalAlignment="Left" Margin="521,23,0,0" VerticalAlignment="Top" Height="77" Width="127" FontSize="20"/>
+		<TextBlock x:Name="ResultTextblock" HorizontalAlignment="Left" Margin="11,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="199" Width="740" Background="#FFD45D5D"/>
+	</Grid>
 </Window>
+

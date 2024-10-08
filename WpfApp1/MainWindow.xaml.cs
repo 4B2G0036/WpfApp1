@@ -1,13 +1,5 @@
-﻿using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WpfApp1
 {
@@ -19,6 +11,29 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Text_box_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var targetTextBox = sender as TextBox;
+            int amount;
+            bool Success = int.TryParse(targetTextBox.Text, out amount);
+            if (!Success)
+            {
+                MessageBox.Show("請輸入整數");
+            }
+            else if (amount <= 0)
+            {
+                MessageBox.Show("請輸入正整數");
+            }
+            else
+            {
+                var targetstackPanel = targetTextBox.Parent as StackPanel;
+                var targetlabel = targetstackPanel.Children[0] as Label;
+                var drinkname = targetlabel.Content.ToString();
+
+                ResultTextblock.Text +=  $"您選擇了 {drinkname}，數量{amount}杯\n";
+            }
         }
     }
 }
