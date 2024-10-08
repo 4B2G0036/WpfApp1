@@ -20,7 +20,7 @@ namespace WpfApp1
             bool Success = int.TryParse(targetTextBox.Text, out amount);
             if (!Success)
             {
-                MessageBox.Show("請輸入整數");
+                MessageBox.Show("請輸入正整數");
             }
             else if (amount <= 0)
             {
