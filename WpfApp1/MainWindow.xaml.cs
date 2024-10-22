@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Microsoft.Win32;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Media;
@@ -10,25 +11,30 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        Dictionary<string, int> drinks = new Dictionary<string, int>
-        {
-            { "紅茶大杯", 60 },
-            { "紅茶小杯", 40 },
-            { "綠茶大杯", 50 },
-            { "綠茶小杯", 30 },
-            { "咖啡大杯", 90 },
-            { "咖啡小杯", 50 },
-            { "可樂大杯", 40 },
-            { "可樂小杯", 30 }
-        };
-
+        Dictionary<string, int> drinks = new Dictionary<string, int>();
         Dictionary<string, int> orders = new Dictionary<string, int>();
         string takeout = "";
         public MainWindow()
         {
             InitializeComponent();
-
+            AddNewDrink(drinks);
             DisplayDrinkMenu(drinks);
+        }
+
+        private void AddNewDrink(Dictionary<string, int> drinks)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog(); // 開啟檔案對話方塊
+            openFileDialog.Filter = "CSV file (*.csv)|*.txt|All files (*.*)|*.*"; // 設定篩選條件
+            if(openFileDialog.ShowDialog() == true)
+            {
+                string filename = openFileDialog.FileName;
+                ReadDrinksFromFile(filename, drinks);
+            }
+        }
+
+        private void ReadDrinksFromFile(string filename, Dictionary<string, int> drinks)
+        {
+            
         }
 
         private void DisplayDrinkMenu(Dictionary<string, int> drinks)
