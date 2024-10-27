@@ -8,19 +8,21 @@
         Title="飲料點餐系統ver3" Height="817" Width="895">
     <Grid Margin="0,0,0,-22">
         <Grid.RowDefinitions>
-            <RowDefinition Height="225*"/>
-            <RowDefinition Height="599*"/>
+            <RowDefinition Height="233*"/>
+            <RowDefinition Height="591*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="272*"/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="622*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="269*"/>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition Width="255*"/>
         </Grid.ColumnDefinitions>
         <StackPanel x:Name="stackpanel_DrinkMenu" Margin="29,160,0,0" Background="#FFA5E4B1" HorizontalAlignment="Left" Width="508" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="285" VerticalAlignment="Top" />
-        <Button x:Name="OrderButton" Content="確定訂購" Margin="425,99,0,0" VerticalAlignment="Top" Height="81" FontSize="18" FontWeight="Bold" Grid.Column="2" Click="OrderButton_Click" HorizontalAlignment="Left" Width="131"/>
-        <TextBlock x:Name="ResultTextBlock" Margin="21,285,0,0" TextWrapping="Wrap" Background="#FFF7F3D4" Padding="5,5,5,5" FontSize="16" HorizontalAlignment="Left" Width="801" Grid.ColumnSpan="3" Grid.Row="1" Height="214" VerticalAlignment="Top"/>
+        <Button x:Name="OrderButton" Content="確定訂購" Margin="28,99,0,0" VerticalAlignment="Top" Height="91" FontSize="18" FontWeight="Bold" Grid.Column="4" Click="OrderButton_Click" HorizontalAlignment="Left" Width="131"/>
+        <TextBlock x:Name="ResultTextBlock" Margin="21,285,12,43" TextWrapping="Wrap" Background="#FFF7F3D4" Padding="5,5,5,5" FontSize="16" Grid.ColumnSpan="5" Grid.Row="1"/>
         <GroupBox Header="內用/外帶" Margin="26,27,0,0" Background="#FFE0C33C" Grid.ColumnSpan="3" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" Width="512">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="456" Margin="44,0,0,0">
+            <StackPanel Orientation="Horizontal" Margin="44,0,0,0">
                 <RadioButton Content="內用" HorizontalAlignment="Left" Margin="20,0,0,0" Height="42" FontSize="22" Width="85" VerticalContentAlignment="Center" FontWeight="Bold" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
                 <RadioButton Content="外帶" HorizontalAlignment="Left" Margin="20,0,0,0" Height="42" FontSize="22" Width="85" VerticalContentAlignment="Center" FontWeight="Bold" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
             </StackPanel>
