@@ -25,7 +25,7 @@ namespace WpfApp1
         private void AddNewDrink(Dictionary<string, int> drinks)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog(); // 開啟檔案對話方塊
-            openFileDialog.Filter = "csv file (*.csv)|*.txt|All files (*.*)|*.*"; // 設定篩選條件
+            openFileDialog.Filter = "csv file (*.csv)|*.csv|All files (*.*)|*.*"; // 設定篩選條件
             if(openFileDialog.ShowDialog() == true)
             {
                 string filename = openFileDialog.FileName;
